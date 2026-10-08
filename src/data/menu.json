@@ -1,0 +1,1729 @@
+{
+  "pricesAreSample": true,
+  "sections": [
+    {
+      "key": "picks",
+      "en": "House Picks",
+      "zh": "特別推介",
+      "items": [
+        {
+          "no": 1,
+          "en": "Lobster / Crab",
+          "zh": "龍蝦/蟹",
+          "price": null,
+          "popular": true,
+          "noteKey": "note.stickyRice"
+        },
+        {
+          "no": 2,
+          "en": "Crab with Garlic & Chili Sauce",
+          "zh": "金蒜辣椒炒蟹",
+          "price": null
+        },
+        {
+          "no": 3,
+          "en": "Lingcod cooked in 2 styles (Soup, Fried, Braised, Steam)",
+          "zh": "生劏龍躉(兩食)",
+          "price": 52
+        },
+        {
+          "no": 4,
+          "en": "Peking Duck (Two courses)",
+          "zh": "片皮鴨(兩食)",
+          "price": 72,
+          "unit": "whole",
+          "popular": true
+        },
+        {
+          "no": 5,
+          "en": "Deep Fried Crispy Pigeon",
+          "zh": "紅燒乳鴿",
+          "price": 28,
+          "unit": "each"
+        },
+        {
+          "no": 6,
+          "en": "Deep Fried Shrimp Ball",
+          "zh": "酥炸蝦丸",
+          "price": 8,
+          "unit": "each",
+          "preorder": true
+        },
+        {
+          "no": 7,
+          "en": "Shredded Salty Chicken with Jelly Fish",
+          "zh": "海蜇手撕雞",
+          "price": 22
+        },
+        {
+          "no": 8,
+          "en": "Minced Pork with Dried Oyster Lettuce Wrap",
+          "zh": "蠔豉肉鬆生菜包",
+          "price": 22
+        },
+        {
+          "no": 9,
+          "en": "Minced Beef with Lettuce Wrap",
+          "zh": "牛肉鬆生菜包",
+          "price": 22
+        },
+        {
+          "no": 10,
+          "en": "Shredded Chicken with Lettuce Wrap",
+          "zh": "雞肉鬆生菜包",
+          "price": 22
+        },
+        {
+          "no": 11,
+          "en": "Shredded Sea Food with Lettuce Wrap",
+          "zh": "海鮮鬆生菜包",
+          "price": 28
+        },
+        {
+          "no": 12,
+          "en": "Assorted Seafood with Vegetable Hot Pot",
+          "zh": "一品海味煲",
+          "price": 42
+        },
+        {
+          "no": 13,
+          "en": "Stir Fried Fish Maw with Scramble Egg & Chives Green",
+          "zh": "生炒桂花魚肚",
+          "price": 26
+        },
+        {
+          "no": 14,
+          "en": "Braised Sea Cucumber and Chinese Mushrooms with Vegetable",
+          "zh": "北菇海參扒菜膽",
+          "price": 42
+        },
+        {
+          "no": 15,
+          "en": "Sauteed Sea Cucumber Clam Meat",
+          "zh": "油泡桂花蚌",
+          "price": 32
+        },
+        {
+          "no": 16,
+          "en": "Honey Pork Chop",
+          "zh": "柚子蜜汁豬扒",
+          "price": 22
+        },
+        {
+          "no": 17,
+          "en": "Bitter Melon with Minced Pork & Preserved Vegetable",
+          "zh": "欖菜肉鬆炒涼瓜",
+          "price": 22
+        },
+        {
+          "no": 18,
+          "en": "Fresh & Dried Seafood with Egg Tofu",
+          "zh": "海皇扒玉子豆腐",
+          "price": 24
+        },
+        {
+          "no": 19,
+          "en": "Braised Pea Tips, Ginkgo & Fresh Bean Curd with Superior Broth",
+          "zh": "銀杏腐包浸豆苗",
+          "price": 26
+        },
+        {
+          "no": 20,
+          "en": "Traditional Steamed Sole Fillet",
+          "zh": "古法蒸龍利柳",
+          "price": 24
+        }
+      ]
+    },
+    {
+      "key": "live",
+      "en": "Live Tank",
+      "zh": "游水海鮮",
+      "items": [
+        {
+          "no": 21,
+          "en": "King Crab",
+          "zh": "皇帝蟹",
+          "price": null
+        },
+        {
+          "no": 22,
+          "en": "Lobster",
+          "zh": "龍蝦",
+          "price": null
+        },
+        {
+          "no": 23,
+          "en": "Dungeness Crab",
+          "zh": "大肉蟹",
+          "price": null
+        },
+        {
+          "no": 24,
+          "en": "Live Geoduck",
+          "zh": "象拔蚌",
+          "price": null
+        },
+        {
+          "no": 25,
+          "en": "Live Scallop",
+          "zh": "帶子",
+          "price": null
+        },
+        {
+          "no": 26,
+          "en": "Live Rockfish",
+          "zh": "石斑魚",
+          "price": null
+        },
+        {
+          "no": 27,
+          "en": "Live Black Cod",
+          "zh": "黑鱈魚",
+          "price": null
+        },
+        {
+          "no": 28,
+          "en": "Live Sea Bass",
+          "zh": "海鱸魚",
+          "price": null
+        },
+        {
+          "no": 29,
+          "en": "Live Sole Fish",
+          "zh": "龍利魚",
+          "price": null
+        },
+        {
+          "no": 30,
+          "en": "Live Tilapia",
+          "zh": "鯽魚",
+          "price": null
+        }
+      ]
+    },
+    {
+      "key": "soup",
+      "en": "Soup",
+      "zh": "湯羹",
+      "items": [
+        {
+          "no": 31,
+          "en": "Double Boiled Whole Winter Melon Soup",
+          "zh": "八寶冬瓜盅",
+          "price": 58,
+          "sizes": [
+            {
+              "label": "Small",
+              "price": 58
+            },
+            {
+              "label": "Large",
+              "price": 72
+            }
+          ],
+          "preorder": true
+        },
+        {
+          "no": 32,
+          "en": "Assorted Seafood and Meat with Winter Melon in Soup",
+          "zh": "錦繡瓜粒湯",
+          "price": 14,
+          "sizes": [
+            {
+              "label": "Small",
+              "price": 14
+            },
+            {
+              "label": "Regular",
+              "price": 22
+            }
+          ]
+        },
+        {
+          "no": 33,
+          "en": "Sliced Fish with Preserve Egg and Parsley in Soup",
+          "zh": "芫茜皮蛋魚片湯",
+          "price": 14,
+          "sizes": [
+            {
+              "label": "Small",
+              "price": 14
+            },
+            {
+              "label": "Regular",
+              "price": 22
+            }
+          ]
+        },
+        {
+          "no": 34,
+          "en": "Fresh & Dried Seafood with Tofu Thick Soup",
+          "zh": "海皇豆腐羹",
+          "price": 16,
+          "sizes": [
+            {
+              "label": "Small",
+              "price": 16
+            },
+            {
+              "label": "Regular",
+              "price": 22
+            }
+          ]
+        },
+        {
+          "no": 35,
+          "en": "Dried Scallops with Chives Thick Soup",
+          "zh": "韭皇瑤柱羹",
+          "price": 16,
+          "sizes": [
+            {
+              "label": "Small",
+              "price": 16
+            },
+            {
+              "label": "Regular",
+              "price": 22
+            }
+          ]
+        },
+        {
+          "no": 36,
+          "en": "Crab Meat with Fish Maw Thick Soup",
+          "zh": "蟹肉魚肚羹",
+          "price": 16,
+          "sizes": [
+            {
+              "label": "Small",
+              "price": 16
+            },
+            {
+              "label": "Regular",
+              "price": 22
+            }
+          ]
+        },
+        {
+          "no": 37,
+          "en": "Seafood with Tofu Soup",
+          "zh": "海鮮豆腐湯",
+          "price": 16,
+          "sizes": [
+            {
+              "label": "Small",
+              "price": 16
+            },
+            {
+              "label": "Regular",
+              "price": 22
+            }
+          ]
+        },
+        {
+          "no": 38,
+          "en": "Minced Chicken with Cream Corn Thick Soup",
+          "zh": "雞茸粟米羹",
+          "price": 14,
+          "sizes": [
+            {
+              "label": "Small",
+              "price": 14
+            },
+            {
+              "label": "Regular",
+              "price": 18
+            }
+          ]
+        },
+        {
+          "no": 39,
+          "en": "Beef with Chinese Parsley Thick Soup",
+          "zh": "西湖牛肉羹",
+          "price": 14,
+          "sizes": [
+            {
+              "label": "Small",
+              "price": 14
+            },
+            {
+              "label": "Regular",
+              "price": 18
+            }
+          ]
+        },
+        {
+          "no": 40,
+          "en": "Duck Meat with Dried Fish Maw Thick Soup",
+          "zh": "花膠鴨絲羹",
+          "price": 16,
+          "sizes": [
+            {
+              "label": "Small",
+              "price": 16
+            },
+            {
+              "label": "Regular",
+              "price": 22
+            }
+          ]
+        },
+        {
+          "no": 41,
+          "en": "Bamboo Piths with Vegetables Thick Soup",
+          "zh": "竹笙什菜羹",
+          "price": 14,
+          "sizes": [
+            {
+              "label": "Small",
+              "price": 14
+            },
+            {
+              "label": "Regular",
+              "price": 18
+            }
+          ]
+        },
+        {
+          "no": 42,
+          "en": "Hot and Sour Soup",
+          "zh": "酸辣湯",
+          "price": 14,
+          "sizes": [
+            {
+              "label": "Small",
+              "price": 14
+            },
+            {
+              "label": "Regular",
+              "price": 18
+            }
+          ]
+        },
+        {
+          "no": 43,
+          "en": "Sliced Pork, Salty Egg, Tofu and Green Vegetable in Soup",
+          "zh": "鹹蛋芥菜肉片豆腐湯",
+          "price": 14,
+          "sizes": [
+            {
+              "label": "Small",
+              "price": 14
+            },
+            {
+              "label": "Regular",
+              "price": 18
+            }
+          ]
+        },
+        {
+          "no": 44,
+          "en": "Chef's Specialty Soup of The Day",
+          "zh": "原煲老火湯",
+          "price": 18,
+          "sizes": [
+            {
+              "label": "Small",
+              "price": 18
+            },
+            {
+              "label": "Regular",
+              "price": 28
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "seafood",
+      "en": "Seafood",
+      "zh": "海鮮",
+      "items": [
+        {
+          "no": 45,
+          "en": "Sauteed Scallops & Prawns with Chinese Broccoli",
+          "zh": "芥蘭蝦球帶子",
+          "price": 28
+        },
+        {
+          "no": 46,
+          "en": "Sauteed Prawns",
+          "zh": "油泡蝦球",
+          "price": 26
+        },
+        {
+          "no": 47,
+          "en": "Stir Fried Shrimps",
+          "zh": "清炒蝦仁",
+          "price": 26
+        },
+        {
+          "no": 48,
+          "en": "Szechuan Style Spicy Shrimp with Peanuts",
+          "zh": "宮保蝦仁",
+          "price": 22
+        },
+        {
+          "no": 49,
+          "en": "Sauteed Scallops",
+          "zh": "油泡帶子",
+          "price": 28
+        },
+        {
+          "no": 50,
+          "en": "Sauteed Squid, Shrimps and Celery with Snow Pea",
+          "zh": "荷芹花枝炒蝦仁",
+          "price": 24
+        },
+        {
+          "no": 51,
+          "en": "Salt & Peppery Prawn",
+          "zh": "椒鹽焗中蝦",
+          "price": 24
+        },
+        {
+          "no": 52,
+          "en": "Pan Fried Prawns with Tomato Sauce",
+          "zh": "干煎蝦碌",
+          "price": 24
+        },
+        {
+          "no": 53,
+          "en": "Pan Fried Shrimps with Scrambled Egg and Chive",
+          "zh": "韭皇蝦仁炒蛋",
+          "price": 24
+        },
+        {
+          "no": 54,
+          "en": "Steamed Scallop with Tofu in Black Bean Sauce",
+          "zh": "豉汁帶子蒸豆腐",
+          "price": 24
+        },
+        {
+          "no": 55,
+          "en": "Salt & Peppery Squid",
+          "zh": "椒鹽鮮魷",
+          "price": 22
+        },
+        {
+          "no": 56,
+          "en": "Deep Fried Oysters",
+          "zh": "酥炸生蠔",
+          "price": 26
+        },
+        {
+          "no": 57,
+          "en": "Deep Fried Oyster with XO Sauce",
+          "zh": "XO醬焗生蠔",
+          "price": 26
+        },
+        {
+          "no": 58,
+          "en": "Seafood with Green",
+          "zh": "碧綠炒三鮮",
+          "price": 26
+        },
+        {
+          "no": 59,
+          "en": "Steam Black Cod with Garlic and Preserved Vegetable",
+          "zh": "冬菜蒜蓉蒸黑魚",
+          "price": 36
+        },
+        {
+          "no": 60,
+          "en": "Cod Fish Fillet with Chile Bean Sauce",
+          "zh": "豆板石斑塊",
+          "price": 24
+        },
+        {
+          "no": 61,
+          "en": "Salt & Peppery Sole Fish",
+          "zh": "椒鹽龍利柳",
+          "price": 24
+        },
+        {
+          "no": 62,
+          "en": "Lemon Breaded Cod Fillet",
+          "zh": "西檸煎斑塊",
+          "price": 24
+        },
+        {
+          "no": 63,
+          "en": "Steam Black Cod with Black Bean Sauce",
+          "zh": "豉汁蒸黑魚",
+          "price": 36
+        },
+        {
+          "no": 64,
+          "en": "Pan Fried Black Cod with Soya Sauce",
+          "zh": "豉油皇煎黑魚",
+          "price": 36
+        },
+        {
+          "no": 65,
+          "en": "Bitter Melon & Preserved Veggie Stew Fish",
+          "zh": "咸菜涼瓜炆魚",
+          "price": 24
+        },
+        {
+          "no": 66,
+          "en": "Sauteed Squids",
+          "zh": "生炒花枝片",
+          "price": 24
+        },
+        {
+          "no": 67,
+          "en": "Salt & Peppery Sliver Fish",
+          "zh": "椒鹽白飯魚",
+          "price": 22
+        },
+        {
+          "no": 68,
+          "en": "Deep Fried Cod Fish with Sweet Corn Sauce",
+          "zh": "粟米石斑塊",
+          "price": 24
+        }
+      ]
+    },
+    {
+      "key": "poultry",
+      "en": "Chicken & Duck",
+      "zh": "雞/鴨",
+      "items": [
+        {
+          "no": 69,
+          "en": "Deep Fried Crispy Chicken",
+          "zh": "當紅炸子雞",
+          "price": 20,
+          "sizes": [
+            {
+              "label": "Half",
+              "price": 20
+            },
+            {
+              "label": "Whole",
+              "price": 36
+            }
+          ]
+        },
+        {
+          "no": 70,
+          "en": "Crystal Running Chicken",
+          "zh": "香妃走地龍江雞",
+          "price": 20,
+          "sizes": [
+            {
+              "label": "Half",
+              "price": 20
+            },
+            {
+              "label": "Whole",
+              "price": 36
+            }
+          ]
+        },
+        {
+          "no": 71,
+          "en": "Specialty Shredded Salty Chicken",
+          "zh": "東江手撕雞",
+          "price": 18
+        },
+        {
+          "no": 72,
+          "en": "House Special Marinated Chicken",
+          "zh": "招牌香妃雞",
+          "price": 18,
+          "unit": "half"
+        },
+        {
+          "no": 73,
+          "en": "Steam Chicken Glazed with Vegetables",
+          "zh": "菜膽上湯雞",
+          "price": 20,
+          "unit": "half"
+        },
+        {
+          "no": 74,
+          "en": "Steam Chicken with Ginger & Green Onion",
+          "zh": "薑蔥油淋雞",
+          "price": 20,
+          "unit": "half"
+        },
+        {
+          "no": 75,
+          "en": "Stir Fried Chicken with Green Beans in Black Bean Sauce",
+          "zh": "豉汁四季豆炒雞片",
+          "price": 20
+        },
+        {
+          "no": 76,
+          "en": "Sliced Chicken with Chili Pepper",
+          "zh": "川椒炒雞片",
+          "price": 20
+        },
+        {
+          "no": 77,
+          "en": "Diced Chicken with Cashew Nuts",
+          "zh": "腰果雞丁",
+          "price": 20
+        },
+        {
+          "no": 78,
+          "en": "Chicken with Black Bean Sauce",
+          "zh": "羅定豆豉雞",
+          "price": 20
+        },
+        {
+          "no": 79,
+          "en": "Lemon Breaded Chicken",
+          "zh": "西檸煎軟雞",
+          "price": 20
+        },
+        {
+          "no": 80,
+          "en": "Sliced Chicken with Ginger & Pineapple",
+          "zh": "紫蘿雞片",
+          "price": 20
+        },
+        {
+          "no": 81,
+          "en": "Braised Duck Stuffed with Eight Delicacies",
+          "zh": "八寶鴨",
+          "price": 72,
+          "preorder": true
+        },
+        {
+          "no": 82,
+          "en": "Soya Duck",
+          "zh": "潮州滷水鴨",
+          "price": 28,
+          "unit": "half"
+        },
+        {
+          "no": 83,
+          "en": "Braised Duck with Eight Jewels",
+          "zh": "八珍扒大鴨",
+          "price": 36,
+          "unit": "half"
+        },
+        {
+          "no": 84,
+          "en": "Bar-B-Que Duck",
+          "zh": "深井燒鴨皇",
+          "price": 36,
+          "unit": "half"
+        },
+        {
+          "no": 85,
+          "en": "Braised Duck with Assorted Vegetables",
+          "zh": "羅漢扒大鴨",
+          "price": 36,
+          "unit": "half"
+        }
+      ]
+    },
+    {
+      "key": "meat",
+      "en": "Beef & Pork",
+      "zh": "豬/牛",
+      "items": [
+        {
+          "no": 86,
+          "en": "Pan Fried Sliced Beef with Green Bean and XO Sauce",
+          "zh": "XO醬季豆炒牛肉",
+          "price": 22
+        },
+        {
+          "no": 87,
+          "en": "Beef Tenderloin in Chef's Special Sauce",
+          "zh": "中式牛柳",
+          "price": 24
+        },
+        {
+          "no": 88,
+          "en": "Honey Pepper Beef Tenderloin with Deep Fried Milk",
+          "zh": "脆奶蜜椒牛柳",
+          "price": 24
+        },
+        {
+          "no": 89,
+          "en": "Diced Beef Tenderloin in Black Pepper Sauce",
+          "zh": "黑椒蘭度牛柳粒",
+          "price": 24
+        },
+        {
+          "no": 90,
+          "en": "Sauteed Beef with Oyster Sauce",
+          "zh": "蠔皇牛肉",
+          "price": 24
+        },
+        {
+          "no": 91,
+          "en": "Beef with Chinese Broccoli",
+          "zh": "芥蘭牛肉",
+          "price": 24
+        },
+        {
+          "no": 92,
+          "en": "Beef with Black Bean Sauce",
+          "zh": "豉椒牛肉",
+          "price": 22
+        },
+        {
+          "no": 93,
+          "en": "Minced Beef with Spinach",
+          "zh": "牛肉鬆扒菠菜",
+          "price": 20
+        },
+        {
+          "no": 94,
+          "en": "Pan Fried Pork Chop and Peach with Butter Sauce",
+          "zh": "牛汁蜜桃骨",
+          "price": 20
+        },
+        {
+          "no": 95,
+          "en": "Beef with Bitter Melon in Black Bean Sauce",
+          "zh": "豉汁涼瓜牛肉",
+          "price": 24
+        },
+        {
+          "no": 96,
+          "en": "Pan Fried Sliced Pork Neck Meat with Preserved Vegetable",
+          "zh": "咸菜炒豬頸肉",
+          "price": 20
+        },
+        {
+          "no": 97,
+          "en": "Pan Fried Pork Neck Meat with Silk Melon & Onion and Fungus",
+          "zh": "勝瓜雲耳炒豬頸肉",
+          "price": 22
+        },
+        {
+          "no": 98,
+          "en": "Sweet & Sour Boneless Pork",
+          "zh": "鮮果咕嚕肉",
+          "price": 18
+        },
+        {
+          "no": 99,
+          "en": "Peking Style Pork Chop",
+          "zh": "京都焗肉扒",
+          "price": 20
+        },
+        {
+          "no": 100,
+          "en": "Honey Garlic Spareribs",
+          "zh": "蜜汁蒜子骨",
+          "price": 20
+        },
+        {
+          "no": 101,
+          "en": "Salt & Peppery Spareribs",
+          "zh": "椒鹽焗排骨",
+          "price": 20
+        },
+        {
+          "no": 102,
+          "en": "Sweet & Sour Spareribs",
+          "zh": "生炒上肉排",
+          "price": 20
+        },
+        {
+          "no": 103,
+          "en": "Steam Pork Patty with Salted Fish",
+          "zh": "咸魚蒸肉餅",
+          "price": 20
+        },
+        {
+          "no": 104,
+          "en": "Layer Pork with Preserved Veggie",
+          "zh": "梅菜皇扣肉",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "key": "claypot",
+      "en": "Claypot",
+      "zh": "煲仔類",
+      "items": [
+        {
+          "no": 105,
+          "en": "Pan Fried Sliced Beef with Ginger and Green Onion Hotpot",
+          "zh": "薑蔥牛肉煲",
+          "price": 22
+        },
+        {
+          "no": 106,
+          "en": "Spicy Minced Pork and Egg Plant in Hotpot",
+          "zh": "魚香茄子煲",
+          "price": 20
+        },
+        {
+          "no": 107,
+          "en": "Diced Chicken with Salted Fish and Tofu Hot Pot",
+          "zh": "咸魚雞粒豆腐煲",
+          "price": 20
+        },
+        {
+          "no": 108,
+          "en": "Assorted Meat & Tofu Hot Pot",
+          "zh": "八珍豆腐煲",
+          "price": 22
+        },
+        {
+          "no": 109,
+          "en": "Dried Shrimp and Scallop with Hair Melon Hot Pot",
+          "zh": "瑤柱蝦米節瓜煲",
+          "price": 20
+        },
+        {
+          "no": 110,
+          "en": "Assorted Seafood & Tofu Hot Pot",
+          "zh": "海鮮豆腐煲",
+          "price": 24
+        },
+        {
+          "no": 111,
+          "en": "Oyster with Green Onion and Ginger Hot Pot",
+          "zh": "薑蔥生蠔煲",
+          "price": 26,
+          "popular": true
+        },
+        {
+          "no": 112,
+          "en": "Stir Fried Egg Plant with Black Cod in Satay Sauce Hot Pot",
+          "zh": "沙爹茄子魚皇煲",
+          "price": 28
+        },
+        {
+          "no": 113,
+          "en": "Sliced Beef with Vermicelli Satay Sauce Hot Pot",
+          "zh": "沙爹粉絲牛肉煲",
+          "price": 22
+        },
+        {
+          "no": 114,
+          "en": "Stew Beef Brisket and Beef Tendon with Chu-Hau Paste Hot Pot",
+          "zh": "柱侯牛筋腩煲",
+          "price": 20
+        },
+        {
+          "no": 115,
+          "en": "Stew Slice Beef with Dried Fungus and Lily Flower Hot Pot",
+          "zh": "金針雲耳牛肉煲",
+          "price": 22
+        },
+        {
+          "no": 116,
+          "en": "Turnip & Beef Brisket in Soup",
+          "zh": "清湯羅白坑腩煲",
+          "price": 26
+        },
+        {
+          "no": 117,
+          "en": "Mixed Vegetables with Preserved Bean Curd Sauce",
+          "zh": "乳香什菜煲",
+          "price": 18
+        },
+        {
+          "no": 118,
+          "en": "Sizzling Chicken Hot Pot",
+          "zh": "啫啫滑雞煲",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "key": "tofu-greens",
+      "en": "Tofu & Greens",
+      "zh": "蔬菜豆腐類",
+      "items": [
+        {
+          "no": 119,
+          "en": "Sautéed Pea Tip with Baibing Mushroom",
+          "zh": "鮑魚菇扒豆苗",
+          "price": 26
+        },
+        {
+          "no": 120,
+          "en": "Braised Assorted Vegetables",
+          "zh": "紅燒四寶齋",
+          "price": 20
+        },
+        {
+          "no": 121,
+          "en": "Sautéed Pea Tip with Garlic Sauce",
+          "zh": "蒜茸豆苗",
+          "price": 26
+        },
+        {
+          "no": 122,
+          "en": "Bean Curd Roll with Greens",
+          "zh": "碧綠腐皮卷",
+          "price": 22
+        },
+        {
+          "no": 123,
+          "en": "Bamboo Piths with 2 Kinds of Chinese Mushroom",
+          "zh": "竹笙扒雙菇",
+          "price": 22
+        },
+        {
+          "no": 124,
+          "en": "Fried Green Bean Szechuan Style",
+          "zh": "干扁四季豆",
+          "price": 20
+        },
+        {
+          "no": 125,
+          "en": "Braised Soft Tofu",
+          "zh": "紅燒玉子豆腐",
+          "price": 20
+        },
+        {
+          "no": 126,
+          "en": "Buddha Style",
+          "zh": "頂湖上素齋",
+          "price": 18
+        },
+        {
+          "no": 127,
+          "en": "Steamed Tofu & Vegetables with Soya Sauce",
+          "zh": "豉油皇菜遠蒸豆腐",
+          "price": 18
+        },
+        {
+          "no": 128,
+          "en": "Sautéed Deluxe Mixed Vegetables",
+          "zh": "洋水芹香",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "key": "rice",
+      "en": "Rice Plates",
+      "zh": "飯類",
+      "items": [
+        {
+          "no": null,
+          "en": "Seafood & Vegetable on Steamed Rice",
+          "zh": "時菜海鮮飯",
+          "price": 18
+        },
+        {
+          "no": null,
+          "en": "Prawn & Vegetable on Steamed Rice",
+          "zh": "時菜蝦球飯",
+          "price": 18
+        },
+        {
+          "no": null,
+          "en": "Shrimp with Scramble Egg on Steamed Rice",
+          "zh": "滑蛋蝦仁飯",
+          "price": 18
+        },
+        {
+          "no": null,
+          "en": "Tender Beef in Gourmet Sauce on Steamed Rice",
+          "zh": "中式牛柳飯",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Curried Beef on Steamed Rice",
+          "zh": "咖喱牛肉飯",
+          "price": 14
+        },
+        {
+          "no": null,
+          "en": "Curried Chicken on Steamed Rice",
+          "zh": "咖喱雞球飯",
+          "price": 14
+        },
+        {
+          "no": null,
+          "en": "Chicken & Vegetable on Steamed Rice",
+          "zh": "時菜雞球飯",
+          "price": 14
+        },
+        {
+          "no": null,
+          "en": "Beef & Vegetable on Steamed Rice",
+          "zh": "時菜牛肉飯",
+          "price": 14
+        },
+        {
+          "no": null,
+          "en": "Rock Cod & Vegetable on Steamed Rice",
+          "zh": "時菜班腩飯",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Sliced Fish & Sweet Corn on Steamed Rice",
+          "zh": "粟米班塊飯",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Diced Pork & Sweet Corn on Steamed Rice",
+          "zh": "粟米肉粒飯",
+          "price": 14
+        },
+        {
+          "no": null,
+          "en": "Beef with Scramble Egg on Steamed Rice",
+          "zh": "滑蛋牛肉飯",
+          "price": 14
+        },
+        {
+          "no": null,
+          "en": "Egg & Minced Beef on Steamed Rice",
+          "zh": "窩蛋免治牛肉飯",
+          "price": 14
+        },
+        {
+          "no": null,
+          "en": "Beef & Tomato on Steamed Rice",
+          "zh": "鮮茄牛肉飯",
+          "price": 14
+        },
+        {
+          "no": null,
+          "en": "Spareribs with Green Pepper & Black Bean Sauce on Steamed Rice",
+          "zh": "豉椒排骨飯",
+          "price": 14
+        },
+        {
+          "no": null,
+          "en": "Beef Brisket & Vegetable on Steamed Rice",
+          "zh": "時菜牛腩飯",
+          "price": 14
+        },
+        {
+          "no": null,
+          "en": "Pineapple Sweet & Sour Pork on Steamed Rice",
+          "zh": "菠蘿咕嚕肉飯",
+          "price": 14
+        },
+        {
+          "no": null,
+          "en": "Buddha's Style Veggi on Steamed Rice",
+          "zh": "羅漢齋飯",
+          "price": 14
+        }
+      ]
+    },
+    {
+      "key": "fried-rice",
+      "en": "Fried Rice",
+      "zh": "炒飯類",
+      "items": [
+        {
+          "no": null,
+          "en": "Fook Chow Style Seafood Fried Rice",
+          "zh": "福州炒飯",
+          "price": 18
+        },
+        {
+          "no": null,
+          "en": "Dried Scallop & Scramble Egg Fried Rice",
+          "zh": "瑤柱蛋白炒飯",
+          "price": 20
+        },
+        {
+          "no": null,
+          "en": "Honey Moon Fried Rice",
+          "zh": "鴛鴦炒飯",
+          "price": 18
+        },
+        {
+          "no": null,
+          "en": "Salted Fish & Diced Chicken Fried Rice",
+          "zh": "咸魚雞粒炒飯",
+          "price": 18
+        },
+        {
+          "no": null,
+          "en": "Shrimp & Egg Fried Rice",
+          "zh": "鮮蝦仁蛋炒飯",
+          "price": 18
+        },
+        {
+          "no": null,
+          "en": "Beef Fried Rice",
+          "zh": "生炒牛肉飯",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Shredded Chicken Fried Rice",
+          "zh": "生炒雞絲飯",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Yang Chow Style Fried Rice",
+          "zh": "楊州炒飯",
+          "price": 16
+        }
+      ]
+    },
+    {
+      "key": "chow-mein",
+      "en": "Pan-Fried Noodles",
+      "zh": "粉麵",
+      "items": [
+        {
+          "no": null,
+          "en": "House Special Chow Mein",
+          "zh": "何源記炒麵",
+          "price": 18
+        },
+        {
+          "no": null,
+          "en": "Seafood Chow Mein",
+          "zh": "海鮮炒麵",
+          "price": 18
+        },
+        {
+          "no": null,
+          "en": "Prawn with Vegetable Chow Mein",
+          "zh": "時菜蝦球炒麵",
+          "price": 18
+        },
+        {
+          "no": null,
+          "en": "Shrimp with Scramble Egg Chow Mein",
+          "zh": "滑蛋蝦球炒麵",
+          "price": 18
+        },
+        {
+          "no": null,
+          "en": "Rock Cod Fillet with Vegetable Chow Mein",
+          "zh": "時菜班腩炒麵",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Spareribs Chow Mein",
+          "zh": "排骨炒麵",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Shredded Pork Chow Mein",
+          "zh": "肉絲炒麵",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "B.B.Q. Pork Chow Mein",
+          "zh": "叉燒炒麵",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Chicken Chow Mein",
+          "zh": "雞球炒麵",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Spareribs with Green Pepper & Black Bean Sauce Chow Mein",
+          "zh": "豉椒排骨炒麵",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Beef with Green Pepper & Black Bean Sauce Chow Mein",
+          "zh": "豉椒牛肉炒麵",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Chicken with Green Pepper & Black Bean Sauce Chow Mein",
+          "zh": "豉椒雞球炒麵",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Shredded Beef with Black Pepper Chow Mein",
+          "zh": "黑椒牛柳炒麵",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Shredded Meat Fried Rice Spaghetti",
+          "zh": "干炒三絲瀨",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Beef Soya Sauce with Fried Rice Noodle",
+          "zh": "干炒牛河",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Sliced Beef Scramble Egg Fried with Rice Noodle",
+          "zh": "滑蛋牛肉炒河",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Preserved Vegetable & Shredded Beef Fried Vermicelli",
+          "zh": "味菜牛柳絲炆米",
+          "price": 18
+        },
+        {
+          "no": null,
+          "en": "Preserved Vegetable & Shredded Pork Fried Vermicelli",
+          "zh": "榨菜肉絲炆米",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Singapore Fried Vermicelli with Curry",
+          "zh": "星洲炒米",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Sweet & Sour Fried Vermicelli",
+          "zh": "廈門炒米",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Singapore Fried Rice Noodle",
+          "zh": "炒貴刁",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Buddha's Vegetable Chow Mein",
+          "zh": "羅漢齋炒麵",
+          "price": 16
+        }
+      ]
+    },
+    {
+      "key": "yee-mein",
+      "en": "Yee Mein",
+      "zh": "伊麵",
+      "items": [
+        {
+          "no": null,
+          "en": "Spicy Egg Plant with Braised Yee Mein (hot)",
+          "zh": "魚香茄子炆伊麵",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Shrimp Roe with Fried Yee Mein",
+          "zh": "蝦子伊麵",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Po Fish with Fried Yee Mein",
+          "zh": "甫魚干燒伊麵",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Pan Fried Yee Mein",
+          "zh": "干燒伊麵",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Shredded Pork with Yee Mein",
+          "zh": "肉絲燴伊麵",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Crab Meat with Yee Mein",
+          "zh": "蟹肉燴伊麵",
+          "price": 20
+        },
+        {
+          "no": null,
+          "en": "Spicy Minced Beef & Bean Curd with Yee Mein (hot)",
+          "zh": "麻婆豆腐炆伊麵",
+          "price": 16
+        }
+      ]
+    },
+    {
+      "key": "noodles",
+      "en": "Mixed Noodles",
+      "zh": "撈麵",
+      "items": [
+        {
+          "no": null,
+          "en": "Wonton with Mixed Noodle",
+          "zh": "鮮蝦雲吞撈麵",
+          "price": 12
+        },
+        {
+          "no": null,
+          "en": "Dumpling with Mixed Noodle",
+          "zh": "鮮蝦水餃撈麵",
+          "price": 12
+        },
+        {
+          "no": null,
+          "en": "Wonton & Dumpling with Mixed Noodle",
+          "zh": "雲吞水餃撈麵",
+          "price": 14
+        },
+        {
+          "no": null,
+          "en": "Assorted Beef Intestine with Mixed Noodle",
+          "zh": "妙制牛什撈麵",
+          "price": 12
+        },
+        {
+          "no": null,
+          "en": "Special Beef Brisket with Mixed Noodle",
+          "zh": "巧手牛腩撈麵",
+          "price": 12
+        },
+        {
+          "no": null,
+          "en": "Special Beef Tendon with Mixed Noodle",
+          "zh": "柱侯牛根撈麵",
+          "price": 12
+        },
+        {
+          "no": null,
+          "en": "Soya Pork Hock with Mixed Noodle",
+          "zh": "南乳豬手撈麵",
+          "price": 12
+        },
+        {
+          "no": null,
+          "en": "Pork Hock & Assorted Beef Intestine with Mixed Noodle",
+          "zh": "豬手牛什撈麵",
+          "price": 14
+        },
+        {
+          "no": null,
+          "en": "Curried Beef Tendon & Brisket with Mixed Noodle",
+          "zh": "咖喱筋腩撈麵",
+          "price": 14,
+          "spicy": true
+        },
+        {
+          "no": null,
+          "en": "Hot Chili Minced Pork with Mixed Noodle",
+          "zh": "京都炸醬撈麵",
+          "price": 12
+        },
+        {
+          "no": null,
+          "en": "Shrimp Roe with Mixed Noodle",
+          "zh": "斗門蝦子撈麵",
+          "price": 12
+        },
+        {
+          "no": null,
+          "en": "Oyster Sauce & Vegetable with Mixed Noodle",
+          "zh": "蠔油時菜撈麵",
+          "price": 12
+        },
+        {
+          "no": null,
+          "en": "Ginger, Green Onion & Oyster Sauce with Mixed Noodle",
+          "zh": "蠔油薑蔥撈麵",
+          "price": 12
+        },
+        {
+          "no": null,
+          "en": "Squid Ball with Mixed Noodle",
+          "zh": "爽滑黑魚丸撈麵",
+          "price": 14
+        },
+        {
+          "no": null,
+          "en": "Szechuan Squid Ball with Mixed Noodle",
+          "zh": "川醬墨魚丸撈麵",
+          "price": 14
+        }
+      ]
+    },
+    {
+      "key": "small-bites",
+      "en": "Small Bites",
+      "zh": "精美小食",
+      "items": [
+        {
+          "no": null,
+          "en": "Deep Fried Chicken Winglette",
+          "zh": "酥炸雞中翼",
+          "price": 12
+        },
+        {
+          "no": null,
+          "en": "Spicy Shredded Chicken (cold)",
+          "zh": "手撕鹽焗雞",
+          "price": 12
+        },
+        {
+          "no": null,
+          "en": "Hot & Spicy Braised Green Beans",
+          "zh": "干扁四季豆",
+          "price": 10
+        },
+        {
+          "no": null,
+          "en": "Deep Fried Tofu",
+          "zh": "酥炸玉子豆腐",
+          "price": 10
+        },
+        {
+          "no": null,
+          "en": "Salt & Peppery Tofu",
+          "zh": "椒鹽炸豆腐",
+          "price": 10
+        },
+        {
+          "no": null,
+          "en": "Soya Duck",
+          "zh": "潮式鹵水鴨",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Consomme Beef Brisket",
+          "zh": "清湯牛坑腩",
+          "price": 14
+        },
+        {
+          "no": null,
+          "en": "Garlic Smelt Fish",
+          "zh": "金蒜多春魚",
+          "price": 12
+        },
+        {
+          "no": null,
+          "en": "Szechuan Spicy Squid Balls",
+          "zh": "四川花枝丸",
+          "price": 14
+        },
+        {
+          "no": null,
+          "en": "Deep Fried Pomfred Fish with Soya Sauce",
+          "zh": "豉油皇鯧魚",
+          "price": 12
+        },
+        {
+          "no": null,
+          "en": "Beef Brisket with Vegetable",
+          "zh": "柱侯牛腩",
+          "price": 14
+        },
+        {
+          "no": null,
+          "en": "Beef Tendon with Vegetable",
+          "zh": "柱侯牛筋",
+          "price": 14
+        },
+        {
+          "no": null,
+          "en": "Special Assorted Beef Intestine with Vegetable",
+          "zh": "柱侯牛什",
+          "price": 16
+        },
+        {
+          "no": null,
+          "en": "Blanched Pork Liver & Kidney",
+          "zh": "白灼腰肝",
+          "price": 12
+        },
+        {
+          "no": null,
+          "en": "Soya Pork Hock",
+          "zh": "南乳豬手",
+          "price": 12
+        },
+        {
+          "no": null,
+          "en": "Vegetable with Oyster Sauce",
+          "zh": "蠔油時菜",
+          "price": 7
+        },
+        {
+          "no": null,
+          "en": "Chinese Fried Donut",
+          "zh": "油條",
+          "price": 4
+        },
+        {
+          "no": null,
+          "en": "Steamed or Deep Fried Bun",
+          "zh": "蒸或炸銀絲卷",
+          "price": 6
+        },
+        {
+          "no": null,
+          "en": "Steamed Rice Noodle",
+          "zh": "豉油皇煎腸粉、蒸腸粉",
+          "price": 7
+        },
+        {
+          "no": null,
+          "en": "Steamed or Deep Fried Chinese Bun (6 pcs)",
+          "zh": "蒸或炸饅頭仔",
+          "price": 7,
+          "unit": "6 pcs"
+        }
+      ]
+    },
+    {
+      "key": "dessert",
+      "en": "Dessert",
+      "zh": "精美甜品",
+      "items": [
+        {
+          "no": 129,
+          "en": "Sugar Rice Flour Balls with Ginger Soup",
+          "zh": "薑糖湯丸",
+          "price": 5
+        },
+        {
+          "no": 130,
+          "en": "Red Bean Pastries",
+          "zh": "香酥豆沙窩餅",
+          "price": 6
+        },
+        {
+          "no": 131,
+          "en": "Sweet Tofu Dessert",
+          "zh": "木桶山水豆腐花",
+          "price": 10,
+          "sizes": [
+            {
+              "label": "Small",
+              "price": 10
+            },
+            {
+              "label": "Large",
+              "price": 18
+            }
+          ]
+        },
+        {
+          "no": 132,
+          "en": "Ginger & Milk Custard",
+          "zh": "金牌薑汁雙皮奶",
+          "price": 5,
+          "popular": true
+        },
+        {
+          "no": 133,
+          "en": "Baked Tapioca Pudding",
+          "zh": "西米焗布丁(預訂)",
+          "price": 18,
+          "preorder": true
+        }
+      ]
+    },
+    {
+      "key": "drinks",
+      "en": "Drinks",
+      "zh": "冷熱飲品",
+      "items": [
+        {
+          "no": null,
+          "en": "Tea",
+          "zh": "奶茶",
+          "price": 3
+        },
+        {
+          "no": null,
+          "en": "Lemon Tea",
+          "zh": "凍檸檬茶",
+          "price": 4
+        },
+        {
+          "no": null,
+          "en": "Cold Tea",
+          "zh": "凍奶茶",
+          "price": 4
+        },
+        {
+          "no": null,
+          "en": "Soft Drinks",
+          "zh": "各式汽水",
+          "price": 4
+        },
+        {
+          "no": null,
+          "en": "Local Beer",
+          "zh": "本地啤酒",
+          "price": 5
+        },
+        {
+          "no": null,
+          "en": "Import Beer",
+          "zh": "進口啤酒",
+          "price": 6
+        },
+        {
+          "no": null,
+          "en": "Red or White Wine",
+          "zh": "紅白餐酒",
+          "price": 7,
+          "unit": "glass"
+        }
+      ]
+    },
+    {
+      "key": "extras",
+      "en": "Extras",
+      "zh": "加料",
+      "items": [
+        {
+          "no": null,
+          "en": "Extra with Fresh Egg",
+          "zh": "加鮮雞蛋(每隻)",
+          "price": 2,
+          "unit": "each"
+        },
+        {
+          "no": null,
+          "en": "With Fried Egg",
+          "zh": "加煎雞蛋(每隻)",
+          "price": 4,
+          "unit": "each"
+        },
+        {
+          "no": null,
+          "en": "Change to Fried Rice",
+          "zh": "炒飯底",
+          "price": 4
+        },
+        {
+          "no": null,
+          "en": "Steamed Rice (bowl)",
+          "zh": "絲苗白飯(每碗)",
+          "price": 2,
+          "unit": "bowl"
+        },
+        {
+          "no": null,
+          "en": "Extra Wonton or Dumpling",
+          "zh": "加雲吞或水餃",
+          "price": 6
+        }
+      ]
+    }
+  ]
+}

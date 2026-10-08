@@ -1,0 +1,27 @@
+---
+import type { Locale } from "../lib/lang";
+import { useI18n } from "../i18n";
+import { routeUrl, tel, site } from "../lib/site";
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const { t } = useI18n(locale);
+---
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a class="brand" href={routeUrl(locale)} lang="en">
+        <span class="seal" aria-hidden="true">{locale === "zh-Hans" ? "鲜" : "鮮"}</span>
+        {site.name}
+      </a>
+      <p>{t("footer.disclaimer")}</p>
+    </div>
+    <div>
+      <a href={`tel:${tel}`}>{site.phone}</a><br />
+      {site.address.street}, {site.address.city}, {site.address.region}
+    </div>
+  </div>
+</footer>

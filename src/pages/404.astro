@@ -1,0 +1,19 @@
+---
+import Base from "../layouts/Base.astro";
+import { routeUrl } from "../lib/site";
+import { useI18n } from "../i18n";
+
+const en = useI18n("en").t;
+const zh = useI18n("zh-Hant").t;
+---
+
+<Base locale="en" route="" notFound title={en("404.title")} description={en("404.text")}>
+  <div class="wrap lost">
+    <h1 lang="en">404</h1>
+    <p>{en("404.text")}</p>
+    <p lang="zh-Hant">{zh("404.text")}</p>
+    <div class="cta" style="justify-content: center">
+      <a class="btn btn-primary" href={routeUrl("en")}>{en("404.home")} · <span lang="zh-Hant">{zh("404.home")}</span></a>
+    </div>
+  </div>
+</Base>

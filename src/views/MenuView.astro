@@ -1,0 +1,118 @@
+---
+import Base from "../layouts/Base.astro";
+import type { Locale } from "../lib/lang";
+import type { Key } from "../i18n/strings";
+import { toHans, useI18n, zhText } from "../i18n";
+import { menu, itemCount, money } from "../lib/menu";
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const { t } = useI18n(locale);
+const zh = locale !== "en";
+const cjkLang = locale === "zh-Hans" ? "zh-Hans" : "zh-Hant";
+const cjk = (hant: string) => zhText(locale, hant);
+const blurb = (key: string) => t(`blurb.${key}` as Key);
+const searchKey = (en: string, hant: string, no: number | null) =>
+  `${en} ${hant} ${toHans(hant)} ${no ?? ""}`.toLowerCase();
+---
+
+<Base
+  locale={locale}
+  route="menu"
+  current="menu"
+  title={t("menu.title")}
+  description={t("menu.desc", { n: itemCount })}
+>
+  <div class="wrap">
+    <div class="menu-head">
+    <span class="eyebrow">{t("menu.eyebrow")}{zh ? "" : <>{" "}<span lang="zh-Hant">菜單</span></>}</span>
+    <h1>{t("menu.h1")}<em>{t("menu.h1Em")}</em></h1>
+    <p>{t("menu.intro", { n: itemCount })}</p>
+    </div>
+
+    <div class="menu-tools" data-tools>
+      <label class="search">
+        <span class="sr-only">{t("menu.search")}</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path>
+        </svg>
+        <input
+          type="search"
+          data-q
+          placeholder={t("menu.placeholder")}
+          autocomplete="off"
+          autocapitalize="off"
+          spellcheck="false"
+          enterkeyhint="search"
+        />
+        <kbd aria-hidden="true">/</kbd>
+      </label>
+      <nav class="chips" aria-label={t("menu.sections")} data-chips>
+        {
+          menu.sections.map((s) => (
+            <a href={`#${s.key}`} data-chip={s.key} lang={zh ? cjkLang : undefined}>
+              {zh ? cjk(s.zh) : s.en}
+            </a>
+          ))
+        }
+      </nav>
+      <p class="result-count" role="status" aria-live="polite" data-count data-total={itemCount}></p>
+    </div>
+
+    <div class="menu-body">
+    {
+      menu.sections.map((s) => (
+        <section class="menu-section" id={s.key} aria-labelledby={`${s.key}-h`} data-section={s.key}>
+          <header>
+            <h2 id={`${s.key}-h`}>
+              {zh ? <span lang={cjkLang} class="h-main">{cjk(s.zh)}</span> : <span class="h-main">{s.en}</span>}
+              {zh ? <span class="h-sub" lang="en">{s.en}</span> : <span class="h-sub" lang="zh-Hant">{s.zh}</span>}
+            </h2>
+            <p>{blurb(s.key)}</p>
+          </header>
+          <ul class="items">
+            {s.items.map((i) => (
+              <li class="item" data-search={searchKey(i.en, i.zh, i.no)}>
+                <div class="name">
+                  {i.no != null && <span class="no">{i.no}</span>}
+                  {zh ? <span lang={cjkLang}>{cjk(i.zh)}</span> : <span>{i.en}</span>}
+                </div>
+                {zh ? <div class="sub" lang="en">{i.en}</div> : <div class="sub" lang="zh-Hant">{i.zh}</div>}
+
+                {i.sizes ? (
+                  <div class="price">
+                    {i.sizes.map((z) => (
+                      <span class="size">
+                        <small>{t(`size.${z.label}` as Key)}</small> {money(z.price)}
+                      </span>
+                    ))}
+                  </div>
+                ) : i.price != null ? (
+                  <div class="price">
+                    {money(i.price)}
+                    {i.unit && <small>{t(`unit.${i.unit}` as Key)}</small>}
+                  </div>
+                ) : (
+                  <div class="price market">{t("price.market")}</div>
+                )}
+
+                {(i.popular || i.preorder || i.spicy || i.noteKey) && (
+                  <div class="meta">
+                    {i.popular && <span class="badge fav">{t("badge.fav")}</span>}
+                    {i.preorder && <span class="badge">{t("badge.preorder")}</span>}
+                    {i.spicy && <span class="badge">{t("badge.spicy")}</span>}
+                    {i.noteKey && <span>{t(i.noteKey as Key)}</span>}
+                  </div>
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+    <p class="empty" hidden data-empty>{t("menu.empty")}</p>
+    </div>
+  </div>
+</Base>

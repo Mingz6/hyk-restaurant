@@ -1,0 +1,23 @@
+{
+  "name": "ABC Restaurant",
+  "tagline": "Cantonese seafood, claypots and wok classics on Fraser Street.",
+  "descriptor": "Hong Kong–style seafood house",
+  "phone": "+1 604-324-8855",
+  "address": {
+    "street": "6236 Fraser St",
+    "city": "Vancouver",
+    "region": "BC",
+    "postal": "V5W 3A1"
+  },
+  "timeZone": "America/Vancouver",
+  "hours": [
+    { "day": "Sunday", "open": "11:00", "close": "23:00" },
+    { "day": "Monday", "open": "11:00", "close": "23:00" },
+    { "day": "Tuesday", "open": "11:00", "close": "23:00" },
+    { "day": "Wednesday", "open": "11:00", "close": "23:00" },
+    { "day": "Thursday", "open": "11:00", "close": "23:00" },
+    { "day": "Friday", "open": "11:00", "close": "24:00" },
+    { "day": "Saturday", "open": "11:00", "close": "24:00" }
+  ],
+  "disclaimer": "Independent design concept. Sample copy and sample prices, not an offer from any restaurant, and not affiliated with or endorsed by any existing business."
+}

@@ -1,0 +1,193 @@
+---
+import Base from "../layouts/Base.astro";
+import type { Locale } from "../lib/lang";
+import { dayName, useI18n, zhText } from "../i18n";
+import { menu, itemCount, money } from "../lib/menu";
+import { fmt } from "../lib/time";
+import { mapUrl, routeUrl, site, tel } from "../lib/site";
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const { t } = useI18n(locale);
+const zh = locale !== "en";
+const cjk = (hant: string) => zhText(locale, hant);
+const glyph = (hant: string) => cjk(hant);
+
+const priceOf = (en: string): string => {
+  const item = menu.sections.flatMap((s) => s.items).find((i) => i.en.startsWith(en));
+  return item?.price != null ? money(item.price) : t("tile.market");
+};
+
+const marquee = [
+  ["龍蝦/蟹", "Lobster / Crab"],
+  ["片皮鴨", "Peking Duck"],
+  ["薑蔥生蠔煲", "Oyster Hot Pot"],
+  ["椒鹽鮮魷", "Salt & Pepper Squid"],
+  ["紅燒乳鴿", "Crispy Pigeon"],
+  ["古法蒸龍利柳", "Steamed Sole"],
+  ["柚子蜜汁豬扒", "Honey Pork Chop"],
+  ["金牌薑汁雙皮奶", "Ginger Milk Custard"],
+];
+
+const cjkLang = locale === "zh-Hans" ? "zh-Hans" : "zh-Hant";
+const monday = site.hours.find((h) => h.day === "Monday")!;
+const menuHref = routeUrl(locale, "menu");
+---
+
+<Base
+  locale={locale}
+  route=""
+  current="home"
+  title={t("home.title")}
+  description={t("home.desc", { n: itemCount })}
+>
+  <section class="hero">
+    <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="ghost" lang={cjkLang} aria-hidden="true">{glyph("鮮")}</div>
+    <div class="wrap">
+      <span class="pill"><b>{t("hero.city")}</b> {t("hero.descriptor")}</span>
+      <h1 lang="en">ABC <em>Restaurant</em></h1>
+      <p class="lead">
+        {t("hero.lead")}{" "}
+        <strong>{t("hero.count", { n: itemCount })}</strong>{t("hero.countRest")}
+      </p>
+      <div class="cta">
+        <a class="btn btn-primary" href={menuHref}>{t("cta.menu")}</a>
+        <a class="btn" href={`tel:${tel}`}>{t("cta.call", { phone: site.phone })}</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      {
+        [0, 1].map(() =>
+          marquee.map(([hant, en]) => (
+            <span>
+              <i>●</i>
+              <span lang={cjkLang}>{cjk(hant)}</span>
+              <small lang="en">{en}</small>
+            </span>
+          )),
+        )
+      }
+    </div>
+  </div>
+
+  <section class="section" aria-labelledby="fav-h">
+    <div class="wrap">
+      <span class="eyebrow">{t("fav.eyebrow")}</span>
+      <h2 class="h2" id="fav-h">{t("fav.title")}<em>{t("fav.titleEm")}</em></h2>
+
+      <div class="bento">
+        <a class="tile spot t-lobster reveal" href={`${menuHref}#picks`}>
+          <span class="glyph" lang={cjkLang} aria-hidden="true">{glyph("龍")}</span>
+          <span class="tag">{t("tile.signature")}</span>
+          <h3>{t("tile.lobster")}</h3>
+          <p>{t("tile.lobsterText")}</p>
+          <span class="price-chip">{t("tile.market")}</span>
+          <span class="more">{t("tile.seeMenu")}</span>
+        </a>
+
+        <div class="tile spot t-2 reveal" data-open-status data-state="unknown">
+          <div class="status"><span class="dot"></span><span data-open-label>{t("tile.openDaily")}</span></div>
+          <h3 data-open-detail>{t("hours.range", { open: fmt(monday.open, locale), close: fmt(monday.close, locale) })}</h3>
+          <p>{t("tile.fri")}</p>
+        </div>
+
+        <a class="tile spot t-2 reveal" href={`${menuHref}#claypot`}>
+          <span class="glyph gold" lang={cjkLang} aria-hidden="true">{glyph("蠔")}</span>
+          <span class="tag">{t("tile.claypot")}</span>
+          <h3>{t("tile.oyster")}</h3>
+          <p>{t("tile.oysterText")}</p>
+          <span class="price-chip">{priceOf("Oyster with Green Onion")}</span>
+        </a>
+
+        <a class="tile spot t-2 reveal" href={`${menuHref}#picks`}>
+          <span class="glyph" lang={cjkLang} aria-hidden="true">{glyph("鴨")}</span>
+          <span class="tag">{t("tile.table")}</span>
+          <h3>{t("tile.duck")}</h3>
+          <p>{t("tile.duckText")}</p>
+          <span class="price-chip">{priceOf("Peking Duck")}</span>
+        </a>
+
+        <a class="tile spot t-2 reveal" href={`${menuHref}#dessert`}>
+          <span class="glyph jade" lang={cjkLang} aria-hidden="true">{glyph("薑")}</span>
+          <span class="tag">{t("tile.dessert")}</span>
+          <h3>{t("tile.custard")}</h3>
+          <p>{t("tile.custardText")}</p>
+          <span class="price-chip">{priceOf("Ginger & Milk Custard")}</span>
+        </a>
+
+        <div class="tile spot t-2 t-late reveal">
+          <span class="glyph gold" lang={cjkLang} aria-hidden="true">{glyph("夜")}</span>
+          <span class="tag">{t("tile.late")}</span>
+          <h3>{t("tile.lateTitle")}</h3>
+          <p>{t("tile.lateText")}</p>
+        </div>
+
+        <a class="tile spot t-3 reveal" href={mapUrl} target="_blank" rel="noopener noreferrer">
+          <span class="tag">{t("tile.find")}</span>
+          <h3 lang="en">{site.address.street}</h3>
+          <p lang="en">{site.address.city}, {site.address.region} {site.address.postal}</p>
+          <span class="more">{t("tile.maps")}</span>
+        </a>
+
+        <a class="tile spot t-3 reveal" href={`tel:${tel}`}>
+          <span class="tag">{t("tile.reservations")}</span>
+          <span class="big-phone">{site.phone.replace("+1 ", "")}</span>
+          <p>{t("tile.reservationsText")}</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section flush-top" aria-labelledby="crave-h">
+    <div class="wrap">
+      <span class="eyebrow">{t("crave.eyebrow")}</span>
+      <h2 class="h2" id="crave-h">{t("crave.title")}<em>{t("crave.titleEm")}</em></h2>
+      <div class="crave reveal">
+        {
+          menu.sections.map((s) => (
+            <a href={`${menuHref}#${s.key}`}>
+              <span class="zh" lang={cjkLang}>{zh ? cjk(s.zh) : s.zh}</span>
+              <span class="en" lang="en">{s.en}</span>
+              <span class="n">{t("crave.n", { n: s.items.length })}</span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section flush-top" id="visit" aria-labelledby="visit-h">
+    <div class="wrap">
+      <span class="eyebrow">{t("visit.eyebrow")}</span>
+      <h2 class="h2" id="visit-h">{t("visit.title")}<em>{t("visit.titleEm")}</em></h2>
+      <div class="visit-grid">
+        <ul class="hours reveal" aria-label={t("visit.hours")}>
+          {
+            site.hours.map((h) => (
+              <li data-day={h.day}>
+                <span>{dayName(locale, h.day)}</span>
+                <span>{t("hours.range", { open: fmt(h.open, locale), close: fmt(h.close, locale) })}</span>
+              </li>
+            ))
+          }
+        </ul>
+        <div class="reveal">
+          <address class="addr" lang="en">
+            {site.address.street}<br />{site.address.city}, {site.address.region}
+            <small>{site.address.postal}</small>
+          </address>
+          <div class="cta">
+            <a class="btn btn-primary" href={mapUrl} target="_blank" rel="noopener noreferrer">{t("visit.directions")}</a>
+            <a class="btn" href={`tel:${tel}`}>{t("visit.reserve")}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
