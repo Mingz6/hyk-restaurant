@@ -1,4 +1,4 @@
-# ABC Restaurant
+# HYK Restaurant
 
 A website design concept for a Hong Kong–style seafood restaurant: mobile-first, bento layout, editorial type, a searchable trilingual HTML menu. Built as a pitch demo.
 
@@ -42,11 +42,11 @@ There are no photos on purpose. To add the owner's own photos, put them in `src/
 
 ```sh
 npm install
-npm run dev      # http://localhost:4321/abc-restaurant/
+npm run dev      # http://localhost:4321/hyk-restaurant/
 npm test         # language detection, open/closed logic, translation completeness
 npm run build    # type-check + static build into dist/
 ```
 
 ## Deploy
 
-Pushing to `main` runs `.github/workflows/deploy.yml` and publishes to GitHub Pages at `https://<user>.github.io/abc-restaurant/`. In the repo settings, Pages → Source must be **GitHub Actions**.
+Pushing to `main` runs `.github/workflows/deploy.yml` and publishes to GitHub Pages at `https://<user>.github.io/hyk-restaurant/`. In the repo settings, Pages → Source must be **GitHub Actions**.

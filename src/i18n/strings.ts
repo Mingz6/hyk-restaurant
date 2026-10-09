@@ -20,7 +20,7 @@ export const en = {
     "Independent design concept. Sample copy and sample prices, not an offer from any restaurant, and not affiliated with or endorsed by any existing business.",
 
   // home
-  "home.title": "ABC Restaurant | Cantonese seafood on Fraser Street",
+  "home.title": "HYK Restaurant | Cantonese seafood on Fraser Street",
   "home.desc": "Cantonese seafood, claypots and wok classics on Fraser Street. {n} dishes on a bilingual online menu. Design concept.",
   "hero.city": "Vancouver",
   "hero.descriptor": "Hong Kong–style seafood house",
@@ -76,8 +76,8 @@ export const en = {
   "hours.range": "{open} to {close}",
 
   // menu page
-  "menu.title": "Menu | ABC Restaurant",
-  "menu.desc": "The full ABC Restaurant menu: {n} dishes in English and Chinese. Sample prices.",
+  "menu.title": "Menu | HYK Restaurant",
+  "menu.desc": "The full HYK Restaurant menu: {n} dishes in English and Chinese. Sample prices.",
   "menu.eyebrow": "Menu",
   "menu.h1": "The ",
   "menu.h1Em": "menu.",
@@ -125,7 +125,7 @@ export const en = {
   "blurb.extras": "Make it yours.",
 
   // 404
-  "404.title": "Page not found | ABC Restaurant",
+  "404.title": "Page not found | HYK Restaurant",
   "404.text": "Nothing here. The kitchen has no record of that page.",
   "404.home": "Back home",
 } as const;
@@ -153,7 +153,7 @@ export const zhHant: Dict = {
   "theme.dark": "深色",
   "footer.disclaimer": "獨立設計概念稿。文案與價格皆為示範，並非任何餐廳的正式資訊，亦與任何現有商家無關，未獲其認可。",
 
-  "home.title": "ABC Restaurant｜溫哥華港式海鮮",
+  "home.title": "HYK Restaurant｜溫哥華港式海鮮",
   "home.desc": "弗雷澤街的粵式海鮮、煲仔與鑊氣小炒。{n} 道菜式的中英對照網上菜單。設計概念稿。",
   "hero.city": "溫哥華",
   "hero.descriptor": "港式海鮮酒家",
@@ -207,8 +207,8 @@ export const zhHant: Dict = {
   "status.opensTomorrow": "明日 {t} 開始營業",
   "hours.range": "{open}–{close}",
 
-  "menu.title": "菜單｜ABC Restaurant",
-  "menu.desc": "ABC Restaurant 完整菜單：{n} 道菜式，中英對照。價格為示範價。",
+  "menu.title": "菜單｜HYK Restaurant",
+  "menu.desc": "HYK Restaurant 完整菜單：{n} 道菜式，中英對照。價格為示範價。",
   "menu.eyebrow": "菜單",
   "menu.h1": "我們的",
   "menu.h1Em": "菜單。",
@@ -253,7 +253,7 @@ export const zhHant: Dict = {
   "blurb.drinks": "冷熱飲品。",
   "blurb.extras": "按喜好加料。",
 
-  "404.title": "找不到頁面｜ABC Restaurant",
+  "404.title": "找不到頁面｜HYK Restaurant",
   "404.text": "這裡什麼都沒有，廚房沒有這一頁的紀錄。",
   "404.home": "回首頁",
 };
