@@ -45,20 +45,24 @@
     /* Light unless the visitor's system asks for dark, or they pick a theme with the toggle. */
     color-scheme: light;
 
-    --bg: light-dark(#f6f0e5, #0c0a09);
-    --bg-2: light-dark(#ece3d1, #15110f);
-    --pop: light-dark(#fffaf0, #1c1714);
-    --card: light-dark(rgb(255 255 255 / 0.62), rgb(255 245 230 / 0.04));
-    --card-hover: light-dark(rgb(255 255 255 / 0.9), rgb(255 245 230 / 0.07));
-    --line: light-dark(rgb(50 30 10 / 0.14), rgb(255 240 220 / 0.11));
-    --text: light-dark(#1d1510, #f4ede2);
-    --muted: light-dark(#625548, #a89c8d);
-    --red: light-dark(#c4241a, #ff5b47);
+    --bg: #f6f0e5;
+    --bg-2: #ece3d1;
+    --pop: #fffaf0;
+    --card: rgb(255 255 255 / 0.62);
+    --card-hover: rgb(255 255 255 / 0.9);
+    --line: rgb(50 30 10 / 0.14);
+    --text: #1d1510;
+    --muted: #625548;
+    --red: #c4241a;
     --red-solid: #c4241a;
-    --gold: light-dark(#8f6200, #f3c45c);
-    --jade: light-dark(#0c6e55, #55d6aa);
-    --glow: light-dark(rgb(196 36 26 / 0.16), rgb(255 110 80 / 0.2));
-    --glass: light-dark(rgb(255 252 246 / 0.78), rgb(22 17 14 / 0.7));
+    --gold: #8f6200;
+    --jade: #0c6e55;
+    --glow: rgb(196 36 26 / 0.16);
+    --glass: rgb(255 252 246 / 0.78);
+    --aurora-1: #ff8a6b;
+    --aurora-2: #ffd37a;
+    --aurora-3: #6fd6b5;
+    --ghost-line: rgb(50 30 10 / 0.12);
 
     --cjk-hant: "Songti TC", "STSong", "Noto Serif CJK TC", "Noto Serif TC", "Source Han Serif TC", "PMingLiU", serif;
     --cjk-hans: "Songti SC", "STSong", "Noto Serif CJK SC", "Noto Serif SC", "Source Han Serif SC", "SimSun", serif;
@@ -81,16 +85,54 @@
     --font-body: "Geist Variable", system-ui, -apple-system, var(--sans-hans), sans-serif;
   }
 
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme]) {
+  /* Dark values are written out twice (system preference, manual choice) rather than with light-dark(),
+     which iOS Safari before 17.5 does not understand. Screen only, so printing always uses the light values. */
+  @media screen and (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
       color-scheme: dark;
+      --bg: #0c0a09;
+      --bg-2: #15110f;
+      --pop: #1c1714;
+      --card: rgb(255 245 230 / 0.04);
+      --card-hover: rgb(255 245 230 / 0.07);
+      --line: rgb(255 240 220 / 0.11);
+      --text: #f4ede2;
+      --muted: #a89c8d;
+      --red: #ff5b47;
+      --gold: #f3c45c;
+      --jade: #55d6aa;
+      --glow: rgb(255 110 80 / 0.2);
+      --glass: rgb(22 17 14 / 0.7);
+      --aurora-1: #b3190f;
+      --aurora-2: #a8741a;
+      --aurora-3: #0b5e4a;
+      --ghost-line: rgb(255 240 220 / 0.1);
     }
   }
   :root[data-theme="light"] {
     color-scheme: light;
   }
-  :root[data-theme="dark"] {
-    color-scheme: dark;
+  @media screen {
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --bg: #0c0a09;
+      --bg-2: #15110f;
+      --pop: #1c1714;
+      --card: rgb(255 245 230 / 0.04);
+      --card-hover: rgb(255 245 230 / 0.07);
+      --line: rgb(255 240 220 / 0.11);
+      --text: #f4ede2;
+      --muted: #a89c8d;
+      --red: #ff5b47;
+      --gold: #f3c45c;
+      --jade: #55d6aa;
+      --glow: rgb(255 110 80 / 0.2);
+      --glass: rgb(22 17 14 / 0.7);
+      --aurora-1: #b3190f;
+      --aurora-2: #a8741a;
+      --aurora-3: #0b5e4a;
+      --ghost-line: rgb(255 240 220 / 0.1);
+    }
   }
 
   @media (min-width: 560px) {
@@ -421,6 +463,7 @@
   }
   .cta .btn {
     flex: 1 1 100%;
+    white-space: nowrap;
   }
 
   /* ---------- bottom dock (phones) ---------- */
@@ -490,14 +533,14 @@
     height: 70vw;
     left: -20vw;
     top: -15vw;
-    background: light-dark(#ff8a6b, #b3190f);
+    background: var(--aurora-1);
   }
   .aurora span:nth-child(2) {
     width: 60vw;
     height: 60vw;
     right: -15vw;
     top: 10vw;
-    background: light-dark(#ffd37a, #a8741a);
+    background: var(--aurora-2);
     animation-duration: 32s;
     animation-delay: -8s;
   }
@@ -506,7 +549,7 @@
     height: 55vw;
     left: 25vw;
     bottom: -20vw;
-    background: light-dark(#6fd6b5, #0b5e4a);
+    background: var(--aurora-3);
     opacity: 0.4;
     animation-duration: 38s;
     animation-delay: -15s;
@@ -521,7 +564,7 @@
     font-size: clamp(14rem, 62vw, 38rem);
     line-height: 0.8;
     color: transparent;
-    -webkit-text-stroke: 1.5px light-dark(rgb(50 30 10 / 0.12), rgb(255 240 220 / 0.1));
+    -webkit-text-stroke: 1.5px var(--ghost-line);
     user-select: none;
     pointer-events: none;
   }
@@ -1105,7 +1148,7 @@
   }
   .badge.fav {
     border-color: transparent;
-    background: var(--gold);
+    background: #f3c45c;
     color: #1d1510;
   }
   .empty {
@@ -1405,6 +1448,37 @@
   }
 }
 
+@layer components {
+  /* Phones on their side: keep the bottom bar slim and let the menu toolbar scroll away instead of eating the screen. */
+  @media (max-height: 500px) and (orientation: landscape) {
+    body {
+      padding-bottom: calc(3.4rem + env(safe-area-inset-bottom));
+    }
+    .dock {
+      padding-block: 0.25rem calc(0.25rem + env(safe-area-inset-bottom));
+    }
+    .dock a {
+      grid-auto-flow: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.4rem;
+      min-height: 2.75rem;
+      padding: 0;
+    }
+    .menu-tools {
+      position: static;
+    }
+    .menu-section {
+      scroll-margin-top: 1rem;
+    }
+  }
+}
+
+@page {
+  size: A4;
+  margin: 12mm;
+}
+
 @layer print {
   @media print {
     :root {
@@ -1414,6 +1488,8 @@
       padding-bottom: 0;
       background: #fff;
       color: #000;
+      font-size: 9pt;
+      line-height: 1.3;
     }
     body::before,
     .strip,
@@ -1425,12 +1501,56 @@
     .footer .btn {
       display: none !important;
     }
+    .wrap {
+      width: 100%;
+    }
+    .menu-head {
+      padding-top: 0;
+    }
+    .menu-head h1 {
+      margin-top: 2mm;
+      font-size: 24pt;
+    }
+    .menu-head p {
+      max-width: none;
+      margin-top: 2mm;
+      font-size: 9pt;
+    }
+    .menu-body {
+      padding-bottom: 0;
+    }
     .menu-section {
-      break-inside: avoid-column;
-      padding-top: 1.2rem;
+      padding-top: 5mm;
+    }
+    .menu-section header {
+      padding-bottom: 1.5mm;
+      break-after: avoid;
+    }
+    .menu-section h2 {
+      font-size: 15pt;
+    }
+    .menu-section header p {
+      font-size: 8.5pt;
     }
     .items {
-      column-gap: 1.5rem;
+      display: block;
+      columns: 2;
+      column-gap: 8mm;
+    }
+    .item {
+      break-inside: avoid;
+      padding: 1.6mm 0;
+      border-radius: 0;
+    }
+    .item .sub,
+    .price {
+      font-size: 8.5pt;
+    }
+    .badge {
+      font-size: 7pt;
+    }
+    .footer {
+      padding-block: 4mm 0;
     }
   }
 }
