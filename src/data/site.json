@@ -1,13 +1,13 @@
 {
   "name": "HYK Restaurant",
-  "tagline": "Cantonese seafood, claypots and wok classics on Fraser Street.",
+  "tagline": "Cantonese seafood, claypots and wok classics in Vancouver.",
   "descriptor": "Hong Kong–style seafood house",
-  "phone": "+1 604-324-8855",
+  "phone": "+1 604-555-0123",
   "address": {
-    "street": "6236 Fraser St",
+    "street": "123 Sample Street",
     "city": "Vancouver",
     "region": "BC",
-    "postal": "V5W 3A1"
+    "postal": ""
   },
   "timeZone": "America/Vancouver",
   "hours": [
@@ -19,5 +19,5 @@
     { "day": "Friday", "open": "11:00", "close": "24:00" },
     { "day": "Saturday", "open": "11:00", "close": "24:00" }
   ],
-  "disclaimer": "Independent design concept. Sample copy and sample prices, not an offer from any restaurant, and not affiliated with or endorsed by any existing business."
+  "disclaimer": "Independent design concept. Sample copy, sample prices and sample contact details, not an offer from any restaurant, and not affiliated with or endorsed by any existing business."
 }

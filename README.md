@@ -27,7 +27,7 @@ Detection lives in `src/lib/lang.ts` and is inlined into the English pages' `<he
 
 | What | Where |
 | --- | --- |
-| Name, phone, address, hours, disclaimer | `src/data/site.json` |
+| Name, placeholder phone, placeholder address, hours, disclaimer | `src/data/site.json` |
 | Dishes, Chinese names, prices, badges | `src/data/menu.json` |
 | UI text (English and Traditional Chinese) | `src/i18n/strings.ts` |
 | Colours, type, spacing | `src/styles/global.css` (`:root` tokens) |
@@ -35,6 +35,18 @@ Detection lives in `src/lib/lang.ts` and is inlined into the English pages' `<he
 Simplified Chinese is generated from the Traditional text at build time with OpenCC, so there is one Chinese source to maintain. A test fails the build if a string exists in English but not in Chinese.
 
 Prices in `menu.json` are sample values. The Chinese dish names were read from photos of a printed menu and need a native proofread. Replace both before any real use.
+
+### Placeholder contact details, real ones only on your own machine
+
+The published site uses a fictional phone number (`604-555-0123`, from the reserved fictional range) and a made-up address, so nobody can mistake it for the restaurant's own site or end up calling the restaurant through it.
+
+To show the owner their own details in person, create `src/data/site.private.json` (gitignored, never deployed). Any field in it overrides `site.json`:
+
+```json
+{ "phone": "+1 …", "address": { "street": "…", "city": "…", "region": "…", "postal": "…" } }
+```
+
+Then `npm run build && npm run preview:network` and open the Network URL on a phone on the same Wi-Fi. CI does not have the file, so GitHub Pages always stays on the placeholders.
 
 There are no photos on purpose. To add the owner's own photos, put them in `src/assets/` and use Astro's `<Image />` in the bento tiles.
 

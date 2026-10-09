@@ -6,7 +6,8 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "test": "node --test \"src/**/*.test.ts\""
+    "test": "node --test \"src/**/*.test.ts\"",
+    "preview:network": "astro preview --host"
   },
   "type": "module",
   "private": true,

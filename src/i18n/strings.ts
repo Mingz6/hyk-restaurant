@@ -2,7 +2,7 @@ export const en = {
   // chrome
   "skip": "Skip to content",
   "strip.label": "Design concept.",
-  "strip.text": "Sample copy and sample prices. Not an official site.",
+  "strip.text": "Sample copy, prices and contact details. Not an official site.",
   "nav.home": "Home",
   "nav.menu": "Menu",
   "nav.visit": "Visit",
@@ -17,11 +17,11 @@ export const en = {
   "theme.light": "Light",
   "theme.dark": "Dark",
   "footer.disclaimer":
-    "Independent design concept. Sample copy and sample prices, not an offer from any restaurant, and not affiliated with or endorsed by any existing business.",
+    "Independent design concept. Sample copy, sample prices and sample contact details, not an offer from any restaurant, and not affiliated with or endorsed by any existing business.",
 
   // home
-  "home.title": "HYK Restaurant | Cantonese seafood on Fraser Street",
-  "home.desc": "Cantonese seafood, claypots and wok classics on Fraser Street. {n} dishes on a bilingual online menu. Design concept.",
+  "home.title": "HYK Restaurant | Cantonese seafood in Vancouver",
+  "home.desc": "Cantonese seafood, claypots and wok classics in Vancouver. {n} dishes on a bilingual online menu. Design concept.",
   "hero.city": "Vancouver",
   "hero.descriptor": "Hong Kong–style seafood house",
   "hero.lead": "Seafood from the tank, claypots at the table, wok classics till late.",
@@ -137,7 +137,7 @@ export type Dict = Record<Key, string>;
 export const zhHant: Dict = {
   "skip": "跳至主要內容",
   "strip.label": "設計概念稿。",
-  "strip.text": "文案與價格皆為示範，並非官方網站。",
+  "strip.text": "文案、價格與聯絡資料皆為示範，並非官方網站。",
   "nav.home": "首頁",
   "nav.menu": "菜單",
   "nav.visit": "到訪",
@@ -151,10 +151,10 @@ export const zhHant: Dict = {
   "theme.auto": "跟隨系統",
   "theme.light": "淺色",
   "theme.dark": "深色",
-  "footer.disclaimer": "獨立設計概念稿。文案與價格皆為示範，並非任何餐廳的正式資訊，亦與任何現有商家無關，未獲其認可。",
+  "footer.disclaimer": "獨立設計概念稿。文案、價格與聯絡資料皆為示範，並非任何餐廳的正式資訊，亦與任何現有商家無關，未獲其認可。",
 
   "home.title": "HYK Restaurant｜溫哥華港式海鮮",
-  "home.desc": "弗雷澤街的粵式海鮮、煲仔與鑊氣小炒。{n} 道菜式的中英對照網上菜單。設計概念稿。",
+  "home.desc": "溫哥華的粵式海鮮、煲仔與鑊氣小炒。{n} 道菜式的中英對照網上菜單。設計概念稿。",
   "hero.city": "溫哥華",
   "hero.descriptor": "港式海鮮酒家",
   "hero.lead": "游水海鮮、砂鍋煲仔、鑊氣小炒，營業到深夜。",

@@ -180,7 +180,7 @@ const menuHref = routeUrl(locale, "menu");
         <div class="reveal">
           <address class="addr" lang="en">
             {site.address.street}<br />{site.address.city}, {site.address.region}
-            <small>{site.address.postal}</small>
+            {site.address.postal && <small>{site.address.postal}</small>}
           </address>
           <div class="cta">
             <a class="btn btn-primary" href={mapUrl} target="_blank" rel="noopener noreferrer">{t("visit.directions")}</a>
